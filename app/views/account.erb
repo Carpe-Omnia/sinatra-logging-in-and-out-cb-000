@@ -11,7 +11,7 @@
       <% user = Helpers.current_user(@sesh) %>
       <h1><%= "Welcome #{user.username}" %></h1><br>
       <p> Password: <%= user.password %> </p><br>
-      <p> Balance: <%= user.balance %> </p><br>
+      <p> Your Balance:<%= user.balance %> </p><br>
     <% end %>
   <a href="/logout" name="Log Out">Log Out </a>
   </body>
