@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
       @sesh = session
       redirect '/account'
     else
-      redirect '/error'
+      erb :error
     end
   end
 
