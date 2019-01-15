@@ -4,7 +4,7 @@ class Helpers
     user = User.find_by(id: user_id)
     user
   end
-  def self.is_logged_in(session)
+  def self.is_logged_in?(session)
     !!current_user(session)
   end
 end
