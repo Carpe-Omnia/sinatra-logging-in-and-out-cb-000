@@ -9,7 +9,7 @@
     <p>god damn it</p>
     <% if Helpers.is_logged_in?(@sesh) %>
       <% user = Helpers.current_user(@sesh) %>
-      <h1> Username: <%= "Welcome #{user.username}" %> </h1><br>
+      <h1><%= "Welcome #{user.username}" %></h1><br>
       <p> Password: <%= user.password %> </p><br>
       <p> Balance: <%= user.balance %> </p><br>
     <% end %>
